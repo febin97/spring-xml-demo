@@ -7,9 +7,9 @@
         <constructor-arg name="actorName" value="SRK"/>
         <constructor-arg name="actorGender" value="Male"/>
         <constructor-arg name="actorAge" value="52"/>
-    </bean>
+    </bean>                                                         <!--Bean for Actor Class -->
     <bean id="movieBean" class="com.stackroute.domain.Movie" autowire="byName">
-    </bean>
+    </bean>                                                                                  <!--Injecting Actor Object into Movie -->
     <bean id="actorBean" class="com.stackroute.domain.Actor">
         <constructor-arg name="actorName" value="Lalettan"/>
         <constructor-arg name="actorGender" value="Male"/>
@@ -20,6 +20,7 @@
     </bean>
 
     <bean id="LifeCycleBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
-    </bean>
+    </bean>                                                 <!-- Bean LifeCyleDemo Bean -->
 
+    <bean id="PostProcessorBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
 </beans>
