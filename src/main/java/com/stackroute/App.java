@@ -25,11 +25,8 @@ public class App
         //Using Application Context
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Movie beanA = context.getBean("movieBean",Movie.class);
-        Movie beanB = context.getBean("movieBean",Movie.class);
         System.out.println(beanA);
+        Movie beanB = context.getBean("movieBean2",Movie.class);
         System.out.println(beanB);
-        System.out.println("BeanA == BeanB?? = "+(beanA==beanB));
-        Movie beanC = context.getBean("movieBean2",Movie.class);
-        System.out.println(beanC);
     }
 }

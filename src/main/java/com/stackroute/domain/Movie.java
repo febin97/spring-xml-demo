@@ -11,6 +11,9 @@ public class Movie {
         this.actor = actor;
     }
 
+    public Movie() {
+    }
+
     @Override
     public String toString() {
         return "Movie{" +
