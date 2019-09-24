@@ -28,8 +28,6 @@ public class App
         AbstractApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Movie beanA = context.getBean("movieBean",Movie.class);
         System.out.println(beanA);
-
-        BeanLifecycleDemoBean beanL = context.getBean("LifeCycleBean",BeanLifecycleDemoBean.class);
         context.registerShutdownHook();
     }
 }
